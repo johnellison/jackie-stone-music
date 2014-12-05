@@ -1,31 +1,37 @@
 // bower:scss
 // endbower
+// Make sure the charset is set appropriately
+@charset "UTF-8";
 
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-}
+// Global Foundation Settings
+@import "settings";
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+// You can import only specific elements by adjusting the import below
+@import "foundation";
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+//01-base
+@import "01-base/config";
+
+//02-layout
+@import "02-layout/l-index";
+
+//03-modules
+@import "03-modules/m-jplayer"; 
+// @import "03-modules/m-video";
+// @import "03-modules/m-top-bar";
+// @import "03-modules/m-arrow-animated";
+// @import "03-modules/m-lyrics";
+// @import "03-modules/m-share-bar";
+// @import "03-modules/m-share-buttons";
+// @import "03-modules/m-share-song";
+@import "03-modules/m-song";
+
+//04-states
+@import "04-states/s-index";
+
+//05-themes
+@import "05-themes/themes";
+
+//debug
+//@import "01-base/debug";
+

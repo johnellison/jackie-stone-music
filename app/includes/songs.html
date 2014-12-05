@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="m-song-wrapper">
+     <div itemprop="track" itemscope itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>
+      <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
+          <div class="jp-play-control jp-control">
+            <a class="jp-play jp-button" itemprop="audio"></a>
+            <a class="jp-pause jp-button"></a>
+          </div>
+          <div class="jp-bar">
+            <div class="jp-seek-bar">
+              <div class="jp-play-bar"></div>
+              <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+              <meta itemprop="url" content="{{ song.mp3 }}"</div>
+              <div class="jp-timing"><span class="jp-duration"></span></div>
+            </div>
+          </div>
+          <div class="jp-no-solution">
+            Bummer! It looks like there's a Media Player Error<br />
+            Please Update your browser to the latest version! (it will make your computer faster and more secure too!)
+          </div>
+          </div>
+      </div>
+  {% comment %}{% include "m-share-song" %}
+  {% include "m-lyrics" %}{% endcomment %}
+  </div>
+</div>

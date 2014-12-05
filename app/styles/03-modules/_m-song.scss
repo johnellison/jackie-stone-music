@@ -1,0 +1,7 @@
+.m-song-wrapper {
+  @include grid-column($columns: 12, $center: true);
+  margin-bottom: 2rem;
+  @media #{$medium-up} {
+    @include grid-column($columns: 8, $center: true);
+  }
+}

@@ -1,0 +1,94 @@
+
+$light-grey: #ddd;
+$medium-grey: #aaa;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+@media #{$small-up} {
+	h1 {
+		font-weight: 300;
+	}
+}	
+
+@media #{$medium-up} {
+	h1 {
+		font-weight: $font-weight-light;
+		margin-bottom: 0;
+	}
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-family: $serif-font;
+	margin-bottom: 0;
+	line-height: .9;
+}
+
+h3.subheader {
+	margin-top: 0;
+	font-size: 2rem;
+	// font-family: $serif-font;
+	color: $primary-color;
+	// font-style: italic;
+}
+
+span.test {
+	font-family: $serif-font;
+	font-size: 1.4rem;
+}
+
+.border {
+	@include button (
+		// $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+	    $button-med,
+	    // Primary color set in settings file. Default: $primary-color.
+	    #ddd,
+	    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+	    true,
+	    // We can set $full-width:true to remove side padding extend width. Default:false
+	    false,
+	    // We can set $disabled:true to create a disabled transparent button. Default:false
+	    false,
+	    // $is-input - <input>s and <button>s take on strange padding. We added this to help fix that. Default:false
+	    false);
+	border: 1px solid $primary-color;
+	background-color: #fff;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background-color: $primary-color;
+		color: #fff;
+	}
+}
+
+.panel {
+  @include panel(
+  );
+
+  border: 1px solid $body-font-color;
+}
+
+.postfix {
+	border: 1px solid $primary-color !important;
+}
+
+.topbar .button {
+	font-size: 1rem;
+}
+
+ul.no-bullets li {
+	list-style: none;
+}
+
+.button {
+	letter-spacing: 1px;
+}
+
+

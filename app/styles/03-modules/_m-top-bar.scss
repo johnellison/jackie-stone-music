@@ -1,0 +1,35 @@
+.contain-to-grid {
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.6);
+}
+
+.top-bar-section ul li {
+	 background: none;
+}
+
+.top-bar-section ul.right li {
+	@media #{$small-up} {
+		display: inline-block;
+	}
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	padding: 0 18.33px;
+	line-height: 55px;
+	&:hover {
+		color: #fff;
+	}
+	background: none;
+}
+
+.top-bar .title-area .name a button {
+	//font-size: .875rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: relative;
+	margin-right: 1.5rem;
+	@media #{$small-up} {
+		top: 9px;
+		left: 10px;
+	}
+} 
+

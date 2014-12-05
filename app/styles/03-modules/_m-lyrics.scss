@@ -1,0 +1,59 @@
+.m-lyrics-button-wrapper {
+	position: relative;
+	height: 64px;
+	width: 100px;
+	margin: 0 auto 2rem auto;
+		top: -64px;
+	left: -10px;
+}
+
+.m-lyrics-image {
+	background-color: #ddd;
+	height: 400px;
+	max-height: 90vh;
+	width: 100%;
+	display: none;
+	position: relative;
+	margin: 0;
+	z-index: -1;
+}
+
+.m-lyrics-tab {
+	margin: 0 auto;
+	border: 1px solid $body-font-color;
+	width: 7rem;
+	height: 6.5rem;
+	z-index: -2;
+	border-radius: 100%;
+	position: relative;
+		
+}
+
+a.m-lyrics-link {
+	position: relative;
+	top: -3.8rem;
+	left: .5rem;
+	margin: 0 auto;
+	width: 6rem;
+	height: 4rem;
+	text-align: center;
+	padding: 1.5rem 0rem;
+	letter-spacing: 2px;
+	font-size: .8rem;
+	z-index: 3;
+	display: block;
+	cursor: pointer !important;
+	margin-bottom: -4rem;
+	color: $primary-color;
+	transition: all .2s ease-in-out;
+
+	@media #{$small-up} {
+		&:hover {
+			transform: scale(1.1);
+			color: scale-color($primary-color, $lightness:-10%);
+		}
+	}
+	
+
+	}
+

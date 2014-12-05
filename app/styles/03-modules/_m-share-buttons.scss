@@ -1,0 +1,50 @@
+
+.m-share {
+	margin: 0 auto;
+
+	@media #{$small-up} {
+		position: absolute;
+		bottom: 1rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	@media #{$medium-up} {
+		bottom: 2rem;
+		left: 50%;
+		margin-left: -235px;
+		width: 520px;
+	}
+
+}
+
+.m-share-button img {
+	@media #{$small-up} {
+		margin: 0px 2px;
+		background-size: 70px 30px;
+		background-repeat: no-repeat;
+		width: 70px;
+		height: 30px;
+	}
+
+	@media #{$medium-up} {
+		float: left;
+		//display: inline-block;
+		margin-left: 10px;
+		
+		margin: 0px 12px;
+		
+	}
+
+	@media #{$large-up} {
+		transition: all .2s ease-in-out;
+
+		&:hover {
+		transform: scale(1.1);
+		width: 77px;
+		height: 33px;
+	}
+	}
+
+	
+}

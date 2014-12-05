@@ -1,0 +1,141 @@
+/* Index Page Layout */
+
+.full-height {
+	@media #{$small-up} {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		padding: 0;
+		height: 98%;
+		min-height: 500px;
+		
+		}
+
+	@media #{$landscape} {
+		padding-top: -60px;
+	}
+}
+
+section {
+	position: relative;
+}
+
+.wildfire-front {
+	/* TODO: Add background image to top */
+	background-image: url('../images/microphone-sepia-1920x1280@2x.jpg');
+	background-size: cover;
+	// width: 100%;
+}
+
+.l-wildfire-front-header {
+	// @include grid-column(12);
+	margin-left: 2rem;
+	margin-top: 2rem;
+	float: left;
+	// transform: rotate(90deg);
+	// transform-origin: left top 0;
+	h1 {
+		line-height: .9;
+	}
+}
+
+.l-wildfire-back {
+	background-image: url('../images/the-wildfire-back-1920x1280@2x.jpg');
+	background-size: cover;
+	width: 100%; 
+	// opacity:
+	padding: 10rem 0;
+}
+
+.l-wildfire-back-header {
+	@include grid-column(12);
+	// margin-bottom: 4rem;
+}
+.l-wildfire-back-poem {
+	@include grid-column($columns: 12, $center: true);
+
+	@media #{$medium-up} {
+		@include grid-column($columns: 6, $center: true);
+	}
+	@media #{$large-up} {
+		@include grid-column($columns: 5, $center: true);
+	}
+	h4.subheader {
+			color: black;
+	}
+}
+
+
+.play-wrapper {
+	text-align: center;
+	margin-left: -3rem;
+}
+
+.songs {
+	padding: 6rem 0;
+}
+
+// .story, footer, .credits {
+// 	padding: 6rem 0;
+// 	border: 1px solid #999;
+// }
+
+// .guitar {
+// 	background-image: url('/assets/img/michael-mcdaniel-guitar1.jpg');
+// 	background-size: cover;
+// }
+
+// .fearless {
+// 	background-image: url('/assets/img/michael-mcdaniel-fearless.jpg');
+// 	background-size: cover;
+// }
+
+// .journal {
+// 	background-color: #eee;
+// }
+
+// .headshot {
+// 	margin-bottom: 1rem;
+// }
+
+footer {
+	background-color: $light-grey;
+}
+
+ul.play-songs {
+	list-style: none;
+	li {
+		margin-bottom: 0rem;
+	}
+}
+@media #{$small-up} {
+	.play-songs li a.button.small {
+		padding: .5rem 1rem;
+	}
+}
+
+
+footer {
+	padding: 2rem 0;
+	li {
+	list-style-type: none;
+	}
+}
+
+.made-by p {
+	margin-top: 1rem;
+}
+.top {
+	& p.lead {
+	margin-bottom: .05rem;
+	//line-height: .5;
+	@media #{$small-only} {
+		font-size: 1.1rem;
+	}
+}
+
+}
+
+
+
+

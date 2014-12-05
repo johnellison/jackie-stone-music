@@ -1,0 +1,30 @@
+
+.m-share-image {
+	img {
+		background-size: 32px 32px;
+		background-repeat: no-repeat;
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: 12px 0px;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+
+a.m-share-image {
+	padding: 0 8px !important;
+
+	@media only screen and (max-width: #{$topbar-breakpoint}) {
+		padding: 10px 5px !important;
+		margin: -18px 0px -32px 0px;
+	}
+
+	&:hover {
+		background-color: #fff; 
+	}
+}
+
