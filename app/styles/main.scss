@@ -1,5 +1,3 @@
-// bower:scss
-// endbower
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
@@ -17,13 +15,13 @@
 
 //03-modules
 @import "03-modules/m-jplayer"; 
-// @import "03-modules/m-video";
-// @import "03-modules/m-top-bar";
-// @import "03-modules/m-arrow-animated";
-// @import "03-modules/m-lyrics";
-// @import "03-modules/m-share-bar";
-// @import "03-modules/m-share-buttons";
-// @import "03-modules/m-share-song";
+@import "03-modules/m-video";
+@import "03-modules/m-top-bar";
+@import "03-modules/m-arrow-animated";
+@import "03-modules/m-lyrics";
+@import "03-modules/m-share-bar";
+@import "03-modules/m-share-buttons";
+@import "03-modules/m-share-song";
 @import "03-modules/m-song";
 
 //04-states
@@ -34,4 +32,3 @@
 
 //debug
 //@import "01-base/debug";
-
