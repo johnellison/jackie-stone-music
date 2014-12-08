@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
-    "browser-sync": "^1.6.2",
+    "browser-sync": "^1.7.2",
     "del": "^0.1.0",
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.7",
