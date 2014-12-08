@@ -1,6 +1,6 @@
 
-jackie-stone-music
+Jackie Stone Music
 ==================
 
-Official website for Jackie stone Music
+Official website for Jackie Stone Music. Jackie Stone's debut, *The Wildfire*, coming soon.
 
