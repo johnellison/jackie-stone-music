@@ -9,23 +9,14 @@ $medium-grey: #aaa;
   padding: 0.2em 0;
 }
 
-
-@media #{$small-up} {
-	h1 {
-		font-weight: 300;
-	}
-}	
-
-@media #{$medium-up} {
-	h1 {
-		font-weight: $font-weight-light;
-		margin-bottom: 0;
-	}
+h1 {
+	font-family: $display-font;
 }
+
 
 h2 {
 	text-transform: uppercase;
-	letter-spacing: .2rem;
+	letter-spacing: .15rem;
 	font-family: $serif-font;
 	margin-bottom: 0;
 	line-height: .9;
@@ -33,10 +24,12 @@ h2 {
 
 h3.subheader {
 	margin-top: 0;
-	font-size: 2rem;
-	// font-family: $serif-font;
-	color: $primary-color;
-	// font-style: italic;
+	font-size: 4rem;
+	font-family: $script-font;
+}
+
+h4 {
+	font-family: $display-font
 }
 
 span.test {
@@ -91,4 +84,7 @@ ul.no-bullets li {
 	letter-spacing: 1px;
 }
 
+@mixin section-box-shadow {
+  box-shadow: 1px 3px 5px 0px #777;
+}
 

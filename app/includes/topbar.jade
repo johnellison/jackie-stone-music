@@ -1,0 +1,38 @@
+.contain-to-grid.fixed
+  nav.top-bar(data-topbar='')
+    ul.title-area
+      li.name
+        // TODO: add href such that it goes to #download-the-wildfire AND focus state for entering email address
+        a#download-music(href='#download-the-wildfire')
+          button.border
+            strong Download Music
+      li.toggle-topbar.menu-icon
+        a(href='#') Menu
+    section.top-bar-section
+      // Left Nav Section
+      ul.left
+        li.active
+          a(href='#top') Home
+        li
+          a(href='mailto:michaelmcdanielmusic@gmail.com?subject=I%20Saw%20Your%20Website') Contact
+      // Right Nav Section
+      ul.right.m-share-bar
+        li
+          a(href='#')
+            strong Share this
+        |       
+        li
+          a.m-share-image(href="{% include 'share-hrefs/facebook' %}", target='_blank')
+            img(src='images/facebook@2x.png', alt='share this on facebook')
+        |       
+        li
+          a.m-share-image(href="{% include 'share-hrefs/twitter' %}", target='_blank')
+            img(src='images/twitter@2x.png', alt='share this on twitter')
+        |       
+        li
+          a.m-share-image(href="{% include 'share-hrefs/googleplus' %}", target='_blank')
+            img(src='images/googleplus@2x.png', alt='share this on google plus')
+        |       
+        li
+          a.m-share-image.email(href="{% include 'share-hrefs/mailto' %}", target='_blank')
+            img(src='images/email@2x.png', alt='share this with email')

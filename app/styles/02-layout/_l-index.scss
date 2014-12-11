@@ -34,7 +34,7 @@ section {
 	}
 
 	@media #{$medium-up} {
-		background-image: url('../images/microphone-sepia-2-1920x1280@2x.jpg');
+		background-image: url('../images/microphone-sepia-1920x1280@2x.jpg');
 		background-size: cover;
 	}
 }
@@ -42,7 +42,7 @@ section {
 .l-wildfire-front-header {
 	// @include grid-column(12);
 	margin-left: 2rem;
-	margin-top: 2rem;
+	margin-top: 4rem;
 	float: left;
 	// transform: rotate(90deg);
 	// transform-origin: left top 0;
@@ -55,18 +55,30 @@ section {
 	background-image: url('../images/the-wildfire-back-1920x1280@2x.jpg');
 	background-size: cover;
 	width: 100%; 
-	// opacity:
-	// padding: 10rem 0;
-	// min-height: 850px;
+		h2, h3.subheader {
+		color: white;
+	}
+
+	h2 {
+		padding-top: 1rem;
+	}
 	@media all {
 		min-height: 825px;
 	}
 	@media #{$small-up} {
 		min-height: 825px;
 	}
+  @include section-box-shadow;
 }
 
 .l-wildfire-back-header {
+	background-color: rgba(50, 50, 50, .8);
+	border-radius: $global-radius;
+	padding: 0;
+	margin-bottom: 2rem;
+	color: white;
+	margin-top: 2rem;
+
 	@media #{$small-up} {
 		@include grid-column($columns: 12, $center: true);
 		margin-top: 4rem;
@@ -76,21 +88,8 @@ section {
 		@include grid-column($columns: 5, $center: true);
 	}
 	// margin-bottom: 4rem;
-	margin-top: 2rem;
-	h1, h2 {
-		color: white;
-	}
-	h1 {
-		font-family: "voluta-script-pro", sans-serif;
-		font-size: 5rem;
-	}
-	h2 {
-		padding-top: 1rem;
-	}
-	background-color: rgba(50, 50, 50, .8);
-	border-radius: $global-radius;
-	padding: 0;
-	margin-bottom: 2rem;
+
+	
 }
 .l-wildfire-back-poem {
 	@include grid-column($columns: 12, $center: true);
@@ -105,6 +104,45 @@ section {
 			color: black;
 	}
 }
+
+#cta, #credits {
+	padding: 5rem 0;
+	@include section-box-shadow;
+}
+
+
+.cta-content {
+	@include grid-column($columns: 12);
+	@include panel($bg: rgba(50,50,50, .8));
+	border-radius: $global-radius;
+	color: white;
+
+	@media #{$small-up} {
+		@include grid-column($columns: 11, $center: true);
+	}
+	@media #{$medium-up} {
+		@include grid-column($columns: 7, $center: true);
+	}
+	h2, h3.subheader {
+		color: white;
+  }
+
+  h3.subheader {
+  	font-family: "voluta-script-pro", sans-serif;
+		font-size: 5rem;
+  }
+}
+
+.l-copyright {
+	@include grid-column(12);
+	text-align: center;
+	margin-top: 2rem;
+	p {
+		margin: 0;
+	}
+}
+
+// end new begin old
 
 
 .play-wrapper {
@@ -163,9 +201,6 @@ footer {
 	}
 }
 
-.made-by p {
-	margin-top: 1rem;
-}
 .top {
 	& p.lead {
 	margin-bottom: .05rem;

@@ -1,23 +1,19 @@
-.row.text-center
-  .small-11.small-centered.medium-7.columns.panel.radius
-    hgroup
-      h2 Download
-      |       
-      h3.subheader The Wildfire
-    |     
-    p
-      | All three songs in 
-      em The Wildfire
-      |  will appear in your inbox momentarily after submitting your email address.
-    |     
-    form#download-the-wildfire(action='#')
-      .row.collapse
-        .small-8.columns
-          input.email-for-download(type='text', placeholder='Your email adress...')
-        |         
-        .small-3.columns
-          a.button.postfix(href='#')
-            strong Submit
-    |     
-    |     
-    p You will never receive spam from me.
+section#cta
+  .row.text-center
+    .cta-content
+      hgroup
+        h2 Download
+        h3.subheader The Wildfire
+      p
+        | All three songs in 
+        em The Wildfire
+        |  will appear in your inbox momentarily after confirming your email address.
+      form#download-the-wildfire(action='#')
+        .row.collapse
+          .small-8.columns
+            input.email-for-download.radius(type='text', placeholder='Your email adress...')
+          |         
+          .small-3.columns
+            a.button.radius.tiny(href='#')
+              strong Submit
+      p You will never receive spam from me.

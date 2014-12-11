@@ -10,6 +10,7 @@
 $sans-serif-font: "ff-enzo-web", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 $serif-font: "droid-serif", serif;
 $display-font: "hotel-open", sans-serif;
+$script-font: "voluta-script-pro", sans-serif;
 
 
 // Allows the use of rem-calc() or lower-bound() in your settings
@@ -51,7 +52,7 @@ $font-weight-light: 100;
 // We use these to control various global styles
    $body-bg: #fff;
    $body-font-color: #333;
-   $body-font-family: $sans-serif-font, "Helvetica", Helvetica, Arial, sans-serif;
+   $body-font-family: $serif-font;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -64,7 +65,7 @@ $font-weight-light: 100;
 // $default-float: left;
 
 // We use these as default colors throughout
-   $primary-color: #811300;
+   $primary-color: #89BDE5;
    $secondary-color: #f2f2f2;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -128,7 +129,7 @@ $font-weight-light: 100;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: $display-font;
+$header-font-family: $script-font;
 // $header-font-weight: $font-weight-light;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -141,7 +142,7 @@ $header-font-family: $display-font;
    $h1-font-size: rem-calc(64);
    $h2-font-size: rem-calc(16);
    $h3-font-size: rem-calc(32);
-// $h4-font-size: rem-calc(23);
+   $h4-font-size: rem-calc(28);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
@@ -161,7 +162,7 @@ $header-font-family: $display-font;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
-// $small-font-size: 60%;
+$small-font-size: 80%;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
@@ -347,7 +348,7 @@ $header-font-family: $display-font;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
+$button-tny: rem-calc(12);
 // $button-sml: rem-calc(14);
 // $button-med: rem-calc(16);
 // $button-lrg: rem-calc(18);
@@ -1192,8 +1193,8 @@ $header-font-family: $display-font;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: rgba(255, 255, 255, .5);
-   $topbar-bg-color: #fff;
+$topbar-bg-color: rgba(255, 255, 255, 0.5);
+   // $topbar-bg-color: #fff;
    $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1251,8 +1252,8 @@ $header-font-family: $display-font;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
-   $topbar-breakpoint: 770px; // Change to 9999px for always mobile layout
-   $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
+   // $topbar-breakpoint: 770px; // Change to 9999px for always mobile layout
+   // $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;
 
 // Divider Styles
    $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
