@@ -1,24 +1,16 @@
 /* Index Page Layout */
 
-.full-height {
-	@media #{$small-up} {
-		overflow: hidden;
-		position: relative;
-		width: 100%;
-		padding: 0;
-		height: 98%;
-		min-height: 500px;
-		
-		}
-
-	@media #{$landscape} {
-		padding-top: -60px;
-	}
-}
-
 section {
 	position: relative;
 }
+
+.l-wildfire-front, .l-wildfire-back {
+	width: 100%;
+	padding: 0;
+	height: 98%;
+	min-height: 500px;
+}
+
 
 .wildfire-front {
 	/* TODO: Add background image to top */
