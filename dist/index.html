@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Jackie Stone Music</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
-    <link rel="stylesheet" href="styles/vendor.css">
+    
     <link rel="stylesheet" href="styles/main.css">
     <script src="//use.typekit.net/gqm4koo.js"></script>
     <script>
@@ -26,21 +26,20 @@
     <div class="contain-to-grid fixed">
       <nav data-topbar="" class="top-bar">
         <ul class="title-area">
-          <li class="name">
-            <!-- TODO: add href such that it goes to #download-the-wildfire AND focus state for entering email address--><a id="download-music" href="#download-the-wildfire">
-              <button class="border"><strong>Download Music</strong></button></a>
+          <li class="name"><a id="download-music" href="#cta">
+              <button class="border"><strong>DOWNLOAD MUSIC</strong></button></a>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+          <li class="toggle-topbar menu-icon"><a href="#">MENU</a></li>
         </ul>
         <section class="top-bar-section">
           <!-- Left Nav Section-->
           <ul class="left">
-            <li class="active"><a href="#top">Home</a></li>
-            <li><a href="mailto:michaelmcdanielmusic@gmail.com?subject=I%20Saw%20Your%20Website">Contact</a></li>
+            <li class="active"><a href="#top">HOME</a></li>
+            <li><a href="mailto:michaelmcdanielmusic@gmail.com?subject=I%20Saw%20Your%20Website">CONTACT</a></li>
           </ul>
           <!-- Right Nav Section-->
           <ul class="right m-share-bar">
-            <li><a href="#"><strong>Share this</strong></a></li>      
+            <li><a href="#"><strong>SHARE</strong></a></li>      
             <li><a href="{% include 'share-hrefs/facebook' %}" target="_blank" class="m-share-image"><img src="images/facebook@2x.png" alt="share this on facebook"></a></li>      
             <li><a href="{% include 'share-hrefs/twitter' %}" target="_blank" class="m-share-image"><img src="images/twitter@2x.png" alt="share this on twitter"></a></li>      
             <li><a href="{% include 'share-hrefs/googleplus' %}" target="_blank" class="m-share-image"><img src="images/googleplus@2x.png" alt="share this on google plus"></a></li>      
@@ -49,12 +48,12 @@
         </section>
       </nav>
     </div>
-    <section id="top" class="wildfire-front full-height">
+    <section id="wildfire-front" class="l-wildfire-front full-height">
       <div>
         <div class="l-wildfire-front-header">
-          <h1>J<br>a<br>c<br>k<br>i<br>e<br><br>S<br>t<br>o<br>n<br>e</h1>
+          <h1><span id="j">J</span><span>a</span><span>c</span><span>k</span><span id="i">i</span><span>e</span><span><br>S</span><span>t</span><span>o</span><span>n</span><span>e</span></h1>
         </div>
-      </div><a href="#wildfire-back" class="m-arrow"> </a>
+      </div><a href="#wildfire-back" class="m-arrow white"> </a>
     </section>
     <section id="wildfire-back" class="l-wildfire-back full-height">
       <div class="row">
@@ -67,17 +66,16 @@
       </div>
       <div class="row">
         <div class="m-song-wrapper">
-          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>      
-          <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
-            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a>            <a class="jp-pause jp-button"></a></div>          
+          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_1" class="jp-jplayer"></div>
+          <div id="jp_container_audio_1" class="jp-flat-audio">
+            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a><a class="jp-pause jp-button"></a></div>
             <div class="jp-bar">
               <div class="jp-seek-bar">
-                <div class="jp-play-bar"></div>              
-                <div class="jp-details"><span itemprop="name" class="jp-title"></span>              
-                  <meta itemprop="url" content="{{ song.mp3 }}" <="" div="">              
-                  <div class="jp-timing"><span class="jp-duration"></span></div>
+                <div class="jp-play-bar"></div>
+                <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+                  <meta itemprop="url" content="Minefield by Jackie Stone on The Wildfire"><span class="jp-duration"></span>
                 </div>
-              </div>          
+              </div>
               <div class="jp-no-solution">Bummer! It looks like there&apos;s a Media Player Error<br>Please Update your browser to the latest version! (it will make your computer faster and more secure too!)</div>
             </div>
           </div>
@@ -85,17 +83,16 @@
       </div>
       <div class="row">
         <div class="m-song-wrapper">
-          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>      
-          <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
-            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a>            <a class="jp-pause jp-button"></a></div>          
+          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_2" class="jp-jplayer"></div>
+          <div id="jp_container_audio_2" class="jp-flat-audio">
+            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a><a class="jp-pause jp-button"></a></div>
             <div class="jp-bar">
               <div class="jp-seek-bar">
-                <div class="jp-play-bar"></div>              
-                <div class="jp-details"><span itemprop="name" class="jp-title"></span>              
-                  <meta itemprop="url" content="{{ song.mp3 }}" <="" div="">              
-                  <div class="jp-timing"><span class="jp-duration"></span></div>
+                <div class="jp-play-bar"></div>
+                <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+                  <meta itemprop="url" content="Silence of Twilight by Jackie Stone on The Wildfire"><span class="jp-duration"></span>
                 </div>
-              </div>          
+              </div>
               <div class="jp-no-solution">Bummer! It looks like there&apos;s a Media Player Error<br>Please Update your browser to the latest version! (it will make your computer faster and more secure too!)</div>
             </div>
           </div>
@@ -103,17 +100,16 @@
       </div>
       <div class="row">
         <div class="m-song-wrapper">
-          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>      
-          <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
-            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a>            <a class="jp-pause jp-button"></a></div>          
+          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_3" class="jp-jplayer"></div>
+          <div id="jp_container_audio_3" class="jp-flat-audio">
+            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a><a class="jp-pause jp-button"></a></div>
             <div class="jp-bar">
               <div class="jp-seek-bar">
-                <div class="jp-play-bar"></div>              
-                <div class="jp-details"><span itemprop="name" class="jp-title"></span>              
-                  <meta itemprop="url" content="{{ song.mp3 }}" <="" div="">              
-                  <div class="jp-timing"><span class="jp-duration"></span></div>
+                <div class="jp-play-bar"></div>
+                <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+                  <meta itemprop="url" content="Rocketeer by Jackie Stone on The Wildfire"><span class="jp-duration"></span>
                 </div>
-              </div>          
+              </div>
               <div class="jp-no-solution">Bummer! It looks like there&apos;s a Media Player Error<br>Please Update your browser to the latest version! (it will make your computer faster and more secure too!)</div>
             </div>
           </div>
@@ -121,17 +117,16 @@
       </div>
       <div class="row">
         <div class="m-song-wrapper">
-          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>      
-          <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
-            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a>            <a class="jp-pause jp-button"></a></div>          
+          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_4" class="jp-jplayer"></div>
+          <div id="jp_container_audio_4" class="jp-flat-audio">
+            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a><a class="jp-pause jp-button"></a></div>
             <div class="jp-bar">
               <div class="jp-seek-bar">
-                <div class="jp-play-bar"></div>              
-                <div class="jp-details"><span itemprop="name" class="jp-title"></span>              
-                  <meta itemprop="url" content="{{ song.mp3 }}" <="" div="">              
-                  <div class="jp-timing"><span class="jp-duration"></span></div>
+                <div class="jp-play-bar"></div>
+                <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+                  <meta itemprop="url" content="Zodiacal Light by Jackie Stone on The Wildfire"><span class="jp-duration"></span>
                 </div>
-              </div>          
+              </div>
               <div class="jp-no-solution">Bummer! It looks like there&apos;s a Media Player Error<br>Please Update your browser to the latest version! (it will make your computer faster and more secure too!)</div>
             </div>
           </div>
@@ -139,57 +134,56 @@
       </div>
       <div class="row">
         <div class="m-song-wrapper">
-          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_{{ song.id }}" class="jp-jplayer"></div>      
-          <div id="jp_container_audio_{{ song.id }}" class="jp-flat-audio">
-            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a>            <a class="jp-pause jp-button"></a></div>          
+          <div itemprop="track" itemscope="" itemtype="http://schema.org/MusicRecording" id="jquery_jplayer_audio_5" class="jp-jplayer"></div>
+          <div id="jp_container_audio_5" class="jp-flat-audio">
+            <div class="jp-play-control jp-control"><a itemprop="audio" class="jp-play jp-button"></a><a class="jp-pause jp-button"></a></div>
             <div class="jp-bar">
               <div class="jp-seek-bar">
-                <div class="jp-play-bar"></div>              
-                <div class="jp-details"><span itemprop="name" class="jp-title"></span>              
-                  <meta itemprop="url" content="{{ song.mp3 }}" <="" div="">              
-                  <div class="jp-timing"><span class="jp-duration"></span></div>
+                <div class="jp-play-bar"></div>
+                <div class="jp-details"><span itemprop="name" class="jp-title"></span>
+                  <meta itemprop="url" content="Touch by Jackie Stone on The Wildfire"><span class="jp-duration"></span>
                 </div>
-              </div>          
+              </div>
               <div class="jp-no-solution">Bummer! It looks like there&apos;s a Media Player Error<br>Please Update your browser to the latest version! (it will make your computer faster and more secure too!)</div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="small-12 columns text-center">
+        <div class="l-wildfire-back-credits">
           <h2>Produced by Michael McDaniel and Michael Seaman</h2>
         </div>
-      </div><a href="#cta" class="m-arrow"> </a>
+      </div><a href="#cta" class="m-arrow white"> </a>
     </section>
-    <section id="cta">
+    <section id="cta" class="l-cta">
       <div class="row text-center">
-        <div class="cta-content">
+        <div class="l-cta-content">
           <hgroup>
             <h2>Download</h2>
             <h3 class="subheader">The Wildfire</h3>
           </hgroup>
-          <p>All three songs in <em>The Wildfire</em> will appear in your inbox momentarily after confirming your email address.</p>
-          <form id="download-the-wildfire" action="#">
+          <p>All three songs in <em>The Wildfire</em> will appear in your inbox after you confirm your email address.</p>
+          <form action="#">
             <div class="row collapse">
               <div class="small-8 columns">
-                <input type="text" placeholder="Your email adress..." class="email-for-download radius">
+                <input id="download-the-wildfire" type="text" placeholder="Your email adress..." class="prefix">
               </div>        
-              <div class="small-3 columns"><a href="#" class="button radius tiny"><strong>Submit</strong></a></div>
+              <div class="small-4 columns"><a href="#" class="button tiny postfix"><strong>Submit</strong></a></div>
             </div>
           </form>
           <p>You will never receive spam from me.</p>
-        </div>
+        </div><a href="#credits" class="m-arrow black"> </a>
       </div>
     </section>
     <section id="credits">
       <div class="row">
-        <div class="small-12 small-centered medium-6 large-5 columns">
+        <div class="l-credits-content">
           <h4>Credits</h4>
           <ul>
             <li>Michael Seaman - Mixing</li>
             <li>Andrew Pancamo - Bass</li>
             <li>Josh Starkman - Lead Guitar</li>
-            <li>Eric Guidry - Percussion on Minefiled</li>
+            <li>Eric Guidry - Percussion</li>
             <li>Morgan Carson - Background Vocals</li>
             <li>Alexis Marceaux - Background Vocals</li>
             <li>Erin Miley - Background Vocals</li>
@@ -205,6 +199,9 @@
             <li>Kristen McDaniel</li>
           </ul>
         </div>
+      </div>
+      <div class="row">
+        <div class="l-credits-back-to-top"><a href="#wildfire-front"><small>BACK TO TOP</small></a></div>
       </div>
     </section>
     <footer class="text-center">
@@ -228,7 +225,7 @@
         </div>       
         <div class="medium-4 columns">
           <div class="made-by">
-            <h4>Website</h4>           <img src="/images/john-ellison-ux-designer%402x.png" alt="john ellison ux designer" width="64" height="64" class="headshot">           
+            <h4>Website</h4><img src="/images/john-ellison-ux-designer%402x.png" alt="john ellison ux designer" width="64" height="64" class="headshot">
             <p>Hand-crafted by <a href="http://www.john-ellison.com">John Ellison</a></p>
           </div>
         </div>

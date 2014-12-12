@@ -168,8 +168,14 @@
 
 .jp-flat-audio .jp-title,
 .jp-flat-audio .jp-duration {
-	font-size: 1.2rem;
-	line-height: 64px;
+	font-size: 1rem;
+	line-height: 72px;
+	white-space: nowrap;
+	@media #{$medium-up} {
+		font-size: 1.2rem;
+		line-height: 64px;
+		white-space: nowrap;
+	}
 }
 
 .jp-flat-audio .jp-no-solution {
