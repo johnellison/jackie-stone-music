@@ -79,12 +79,14 @@ section {
 		padding-top: 1rem;
 	}
 	
-	min-height: 875px;
+	min-height: 850px;
 
 	@media #{$small-up} {
-		min-height: 875px;
+		min-height: 850px;
 	}
-  
+  @media #{$medium-up} {
+		min-height: 825px;
+	}
 }
 
 .l-wildfire-back-header {
@@ -155,6 +157,13 @@ section {
 	@media #{$large-up} {
 		@include grid-column($columns: 6, $center: true);
 	}
+}
+
+.l-credits-back-to-top {
+	@include grid-column(12);
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: -4rem;
 }
 
 // end new begin old

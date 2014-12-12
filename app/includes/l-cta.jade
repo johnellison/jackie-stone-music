@@ -11,9 +11,11 @@ section#cta.l-cta
       form#download-the-wildfire(action='#')
         .row.collapse
           .small-8.columns
-            input.email-for-download.radius(type='text', placeholder='Your email adress...')
+            input.email-for-download.prefix(type='text', placeholder='Your email adress...')
           |         
-          .small-3.columns
-            a.button.radius.tiny(href='#')
+          .small-4.columns
+            a.button.tiny.postfix(href='#')
               strong Submit
       p You will never receive spam from me.
+    a(class="m-arrow black", href="#credits") 
+
