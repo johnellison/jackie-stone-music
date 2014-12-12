@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
-    "browser-sync": "^1.7.2",
+    "browser-sync": "^1.6.2",
     "del": "^0.1.0",
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.7",
@@ -20,7 +20,7 @@
     "gulp-load-plugins": "^0.5.0",
     "gulp-plumber": "^0.6.3",
     "gulp-replace": "^0.3.0",
-    "gulp-ruby-sass": "^0.5.0",
+    "gulp-sass": "^1.2.4",
     "gulp-size": "^0.4.0",
     "gulp-uglify": "^0.3.0",
     "gulp-useref": "^0.6.0",
