@@ -4,15 +4,6 @@ section {
 	position: relative;
 }
 
-h1 {
-	@media screen and (max-height: 480px) {
-		font-size: 1.8rem;
-	}
-	@media screen and (min-height: 481px) and (max-height: 800px) {
-		font-size: 3rem;
-	}
-}
-
 .l-wildfire-front, .l-wildfire-back {
 	width: 100%;
 	padding: 0;
@@ -46,7 +37,33 @@ h1 {
 	// transform-origin: left top 0;
 	h1 {
 		line-height: .9;
+		@media screen and (max-height: 480px) {
+			font-size: 1.8rem;
+			#j {
+				margin-left: .2rem;
+			}
+			#i {
+				margin-left: .3rem;
+			}
+		}
+		@media screen and (min-height: 481px) and (max-height: 800px) {
+			font-size: 3rem;
+		}
+		@media screen and (min-height: 481px) {
+			#j {
+				margin-left: .4rem;
+			}
+			#i {
+				margin-left: .6rem;
+			}
+		}
+		span {
+			display: block;
+		}
+
 	}
+
+
 }
 
 .l-wildfire-back {
@@ -133,10 +150,10 @@ h1 {
 .l-credits-content {
 	@include grid-column($columns: 12, $center: true);
 	@media #{$medium-up} {
-		@include grid-column($columns: 6, $center: true);
+		@include grid-column($columns: 7, $center: true);
 	}
 	@media #{$large-up} {
-		// @include g
+		@include grid-column($columns: 6, $center: true);
 	}
 }
 
