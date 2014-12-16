@@ -6,32 +6,43 @@ section {
 
 .l-wildfire-front, .l-wildfire-back {
 	width: 100%;
-	padding: 0;
-	height: 98%;
-	min-height: 500px;
+	height: 100%;
 }
 
-
 .l-wildfire-front {
-	background-image: url('../images/microphone-sepia-2-1920x1280@2x.jpg');
+	background-position: 50%;
+	background-image: image-url('../images/microphone-sepia-1920x1280.jpg');
 	background-size: cover;
-	// width: 100%;
+	margin: 0 auto;
 
 	@media #{$small-up} {
-		background-image: url('../images/jackie-stone-sepia-640x960@2x.jpg');
-		background-size: cover;
+		min-height: 500px;
+		// min-height: 86vh;
+		@media (orientation: portrait) {
+			background-image: url('../images/jackie-stone-640x960.jpg');
+			background-size: cover;
+			@include image-2x('../images/jackie-stone-640x960@2x.jpg');
+		}
+		@media (orientation: landscape) {
+			background-image: url('../images/jackie-stone-960x640.jpg');
+			background-size: cover;
+			@include image-2x('../images/jackie-stone-960x640@2x.jpg');
+			min-height: 450px;
+		}
 	}
 
-	@media #{$medium-up} {
-		background-image: url('../images/microphone-sepia-1920x1280@2x.jpg');
+	@media #{$large-up} {
+		background-image: url('../images/jackie-stone-1920x1080.jpg');
 		background-size: cover;
+		@include image-2x('../images/jackie-stone-1920x1080@2x.jpg');
 	}
+
 }
 
 .l-wildfire-front-header {
 	// @include grid-column(12);
 	margin-left: 2rem;
-	margin-top: 4rem;
+	margin-top: 2rem;
 	float: left;
 	// transform: rotate(90deg);
 	// transform-origin: left top 0;
@@ -67,32 +78,52 @@ section {
 }
 
 .l-wildfire-back {
-	background-image: url('../images/the-wildfire-back-1920x1280@2x.jpg');
+	background-position: 50%;
+	background-image: url('../images/the-wildfire-back-1280x753.jpg');
 	background-size: cover;
-	width: 100%; 
+	margin: 0 auto;
 	@include section-box-shadow;
+
 	h2, h3.subheader {
 		color: white;
 	}
 
 	h2 {
-		padding-top: 1rem;
+		// padding-top: 1rem;
 	}
-	
-	min-height: 850px;
 
 	@media #{$small-up} {
-		min-height: 850px;
+		min-height: 875px;
+		@media (orientation: portrait) {
+			background-image: url('../images/the-wildfire-back-640x960.jpg');
+			background-size: cover;
+			@include image-2x('../images/the-wildfire-back-640x960@2x.jpg');
+		}
+		@media (orientation: landscape) {
+			background-image: url('../images/the-wildfire-back-960x640.jpg');
+			background-size: cover;
+			@include image-2x('../images/the-wildfire-back-960x640@2x.jpg');
+			// min-height: 850px;
+		}
 	}
   @media #{$medium-up} {
-		min-height: 8px;
+		min-height: 850px;
+		background-image: url('../images/the-wildfire-back-1280x853.jpg');
+		background-size: cover;
+		@include image-2x('../images/the-wildfire-back-1280x853@2x.jpg');
+	}
+	@media #{$large-up} {
+		background-image: url('../images/the-wildfire-back-1920x1280.jpg');
+		background-size: cover;
+		@include image-2x('../images/the-wildfire-back-1920x1280@2x.jpg');
 	}
 }
+
 
 .l-wildfire-back-header {
 	background-color: rgba(50, 50, 50, .8);
 	border-radius: $global-radius;
-	padding: 0;
+	padding: 1rem 0;
 	margin-bottom: 2rem;
 	color: white;
 	margin-top: 2rem;
@@ -104,6 +135,10 @@ section {
 
 	@media #{$medium-up} {
 		@include grid-column($columns: 5, $center: true);
+	}
+
+	h3.subheader {
+		margin: 0;
 	}
 }
 
@@ -118,11 +153,13 @@ section {
 }
 
 
-.l-cta-content {
+.l-cta-content, .l-credits-content {
 	@include grid-column($columns: 12);
 	@include panel($bg: rgba(50,50,50, .8));
 	border-radius: $global-radius;
 	color: white;
+	@include section-box-shadow;
+
 
 	@media #{$small-up} {
 		@include grid-column($columns: 11, $center: true);
@@ -149,13 +186,54 @@ section {
 	}
 }
 
+#credits {
+	// background-image: url('../images/studio.jpg');
+	background-size: cover;
+	color: white;
+	@media #{$small-up} {
+		background-image: url('../images/studio-640x960.jpg');
+		background-size: cover;
+		@include image-2x('../images/studio-640x960@2x.jpg');
+	}
+
+	@media #{$medium-up} {
+		@media (orientation: portrait) {
+			background-image: url('../images/studio-1080x1920.jpg');
+			background-size: cover;
+			@include image-2x('../images/studio-1080x1920@2x.jpg');
+		}
+	}
+
+	@media #{$large-up} {
+		background-image: url('../images/studio-1600x1067.jpg');
+		background-size: cover;
+		@include image-2x('../images/studio-1600x1067@2x.jpg');
+	}
+
+	@media #{$xlarge-up} {
+		background-image: url('../images/studio-1920x1280.jpg');
+		background-size: cover;
+		@include image-2x('../images/studio-1920x1280@2x.jpg');
+	}
+
+	a {
+		color: white;
+	}
+}
+
 .l-credits-content {
 	@include grid-column($columns: 12, $center: true);
+
 	@media #{$medium-up} {
 		@include grid-column($columns: 7, $center: true);
 	}
 	@media #{$large-up} {
 		@include grid-column($columns: 6, $center: true);
+	}
+
+	h4 {
+		text-align: center;
+		color: white;
 	}
 }
 
@@ -170,15 +248,8 @@ section {
 
 footer {
 	background-color: $light-grey;
-}
-
-footer {
 	padding: 2rem 0;
 	li {
-	list-style-type: none;
+		list-style-type: none;
 	}
 }
-
-
-
-

@@ -1,11 +1,11 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
 
-// Global Foundation Settings
+// Foundation Settings
 @import "settings";
 
 // You can import only specific elements by adjusting the import below
-@import "foundation";
+@import "bower_components/foundation/scss/foundation";
 
 //01-base
 @import "01-base/config";
@@ -15,10 +15,10 @@
 
 //03-modules
 @import "03-modules/m-jplayer"; 
-@import "03-modules/m-video";
+// @import "03-modules/m-video";
 @import "03-modules/m-top-bar";
 @import "03-modules/m-arrow";
-@import "03-modules/m-lyrics";
+// @import "03-modules/m-lyrics";
 @import "03-modules/m-share-bar";
 @import "03-modules/m-share-buttons";
 @import "03-modules/m-share-song";

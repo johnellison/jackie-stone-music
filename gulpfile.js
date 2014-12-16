@@ -6,6 +6,11 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
+gulp.task('songs', function () {
+  return gulp.src('app/songs/*.*')
+    .pipe(gulp.dest('dist/songs'));
+});
+
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])
       .pipe($.jade({pretty: true}))
@@ -17,9 +22,9 @@ gulp.task('styles', function () {
     .pipe($.plumber())
     .pipe($.sass({
       errLogToConsole: true,
-      style: 'nested',
+      style: 'compressed',
       precision: 9,
-      includePaths: ['bower_components/foundation/scss']
+      includePaths: ['bower_components']
     }))
     .pipe($.autoprefixer({browsers: ['last 1 version']}))
     .pipe(gulp.dest('.tmp/styles'));
@@ -108,7 +113,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['songs','jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

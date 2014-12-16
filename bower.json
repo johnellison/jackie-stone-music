@@ -7,5 +7,8 @@
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
     "jplayer": "~2.9.1",
     "jquery-waypoints": "~2.0.5"
+  },
+  "devDependencies": {
+    "sass-media-resolution": "~0.1.0"
   }
 }

@@ -7,7 +7,7 @@
 //
 
 //variables used in settings
-$sans-serif-font: "ff-enzo-web", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+$sans-serif-font: "Helvetica-Neue", Helvetica, Arial, sans-serif;
 $serif-font: "Courier", serif;
 $display-font: "hotel-open", sans-serif;
 $script-font: "voluta-script-pro", sans-serif;
@@ -26,7 +26,7 @@ $font-weight-light: 100;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-   $base-font-size: 16px;
+   $base-font-size: 18px;
 
 // This is the default html and body font-size for the base rem value.
   $rem-base: $base-font-size;
@@ -1193,7 +1193,7 @@ $button-tny: rem-calc(12);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: rgba(255, 255, 255, 0.5);
+$topbar-bg-color: rgba(255, 255, 255, 0.8);
    // $topbar-bg-color: #fff;
    $topbar-bg: $topbar-bg-color;
 
