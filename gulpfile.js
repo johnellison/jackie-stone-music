@@ -6,13 +6,19 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
+// gulp.task('clearCache', function (done) {
+//   return $.cache.clearAll(done);
+// });
+
 gulp.task('songs', function () {
-  return gulp.src('app/songs/*.*')
+  return gulp.src(['app/songs/*.mp3', 'app/songs/*.wav'])
     .pipe(gulp.dest('dist/songs'));
+});
+
+gulp.task('zip', function() {
   return gulp.src('app/songs/the-wildfire.zip')
     .pipe(gulp.dest('dist'));
 });
-
 
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])
@@ -116,7 +122,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['songs','jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['songs', 'zip', 'jshint', 'html', 'images', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
