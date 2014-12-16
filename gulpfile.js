@@ -9,7 +9,10 @@ var reload = browserSync.reload;
 gulp.task('songs', function () {
   return gulp.src('app/songs/*.*')
     .pipe(gulp.dest('dist/songs'));
+  return gulp.src('app/songs/the-wildfire.zip')
+    .pipe(gulp.dest('dist'));
 });
+
 
 gulp.task('views', function () {
   return gulp.src(['app/*.jade', '!app/layout.jade'])

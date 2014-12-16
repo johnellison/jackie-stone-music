@@ -7,14 +7,15 @@
           button.border
             strong DOWNLOAD MUSIC
       li.toggle-topbar.menu-icon
-        a(href='#') MENU
+        a(href='#') 
+          span MENU
     section.top-bar-section
       // Left Nav Section
       ul.left
         li.active
           a(href='#top') HOME
         li
-          a(href='mailto:michaelmcdanielmusic@gmail.com?subject=I%20Saw%20Your%20Website') CONTACT
+          a(href='mailto:jackiestonemusic@gmail.com?subject=I%20Saw%20Your%20Website') CONTACT
       // Right Nav Section
       ul.right.m-share-bar
         li
@@ -22,17 +23,17 @@
             strong SHARE
         |       
         li
-          a.m-share-image(href="{% include 'share-hrefs/facebook' %}", target='_blank')
+          a.m-share-image(href="http://facebook.com/sharer/sharer.php?u=jackiestonemusic.com", target='_blank')
             img(src='images/facebook@2x.png', alt='share this on facebook')
         |       
         li
-          a.m-share-image(href="{% include 'share-hrefs/twitter' %}", target='_blank')
+          a.m-share-image(href="http://twitter.com/share?text=Listen+to+The+Wildfire+by+@jackiestonemusic.%0a%0aAvailable+for+free+download+here:", target='_blank')
             img(src='images/twitter@2x.png', alt='share this on twitter')
         |       
         li
-          a.m-share-image(href="{% include 'share-hrefs/googleplus' %}", target='_blank')
+          a.m-share-image(href="https://plus.google.com/share?url=jackiestonemusic.com", target='_blank')
             img(src='images/googleplus@2x.png', alt='share this on google plus')
         |       
         li
-          a.m-share-image.email(href="{% include 'share-hrefs/mailto' %}", target='_blank')
+          a.m-share-image.email(href="mailto:jackiestonemusic@gmail.com?subject=Check%20Out%20Jackie%20Stone%20Music&body=http://www.jackiestonemusic.com")
             img(src='images/email@2x.png', alt='share this with email')

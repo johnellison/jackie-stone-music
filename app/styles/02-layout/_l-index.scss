@@ -21,12 +21,10 @@ section {
 		@media (orientation: portrait) {
 			background-image: url('../images/jackie-stone-640x960.jpg');
 			background-size: cover;
-			@include image-2x('../images/jackie-stone-640x960@2x.jpg');
 		}
 		@media (orientation: landscape) {
 			background-image: url('../images/jackie-stone-960x640.jpg');
 			background-size: cover;
-			@include image-2x('../images/jackie-stone-960x640@2x.jpg');
 			min-height: 450px;
 		}
 	}
@@ -34,7 +32,6 @@ section {
 	@media #{$large-up} {
 		background-image: url('../images/jackie-stone-1920x1080.jpg');
 		background-size: cover;
-		@include image-2x('../images/jackie-stone-1920x1080@2x.jpg');
 	}
 
 }
@@ -97,25 +94,19 @@ section {
 		@media (orientation: portrait) {
 			background-image: url('../images/the-wildfire-back-640x960.jpg');
 			background-size: cover;
-			@include image-2x('../images/the-wildfire-back-640x960@2x.jpg');
 		}
 		@media (orientation: landscape) {
 			background-image: url('../images/the-wildfire-back-960x640.jpg');
 			background-size: cover;
-			@include image-2x('../images/the-wildfire-back-960x640@2x.jpg');
-			// min-height: 850px;
 		}
 	}
   @media #{$medium-up} {
-		min-height: 850px;
 		background-image: url('../images/the-wildfire-back-1280x853.jpg');
 		background-size: cover;
-		@include image-2x('../images/the-wildfire-back-1280x853@2x.jpg');
 	}
 	@media #{$large-up} {
 		background-image: url('../images/the-wildfire-back-1920x1280.jpg');
 		background-size: cover;
-		@include image-2x('../images/the-wildfire-back-1920x1280@2x.jpg');
 	}
 }
 
@@ -170,11 +161,6 @@ section {
 	h2, h3.subheader {
 		color: white;
   }
-
-  h3.subheader {
-  	font-family: "voluta-script-pro", sans-serif;
-		font-size: 5rem;
-  }
 }
 
 .l-copyright {
@@ -216,7 +202,7 @@ section {
 		@include image-2x('../images/studio-1920x1280@2x.jpg');
 	}
 
-	a {
+	li a {
 		color: white;
 	}
 }
@@ -249,7 +235,22 @@ section {
 footer {
 	background-color: $light-grey;
 	padding: 2rem 0;
+	ul {
+		text-align: center;
+	}
 	li {
 		list-style-type: none;
+		font-size: 3rem;
+		display: inline-block;
+		margin-right: 1rem;
+		margin-top: -.3rem;
+		a {
+			color: $body-font-color;
+		}
+	}
+	.made-by {
+		p {
+			line-height: 1.2;
+		}
 	}
 }

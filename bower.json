@@ -3,12 +3,9 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "foundation": "zurb/bower-foundation",
+    "foundation": "5.4.7",
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
     "jplayer": "~2.9.1",
     "jquery-waypoints": "~2.0.5"
-  },
-  "devDependencies": {
-    "sass-media-resolution": "~0.1.0"
   }
 }

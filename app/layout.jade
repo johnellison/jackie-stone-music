@@ -4,21 +4,31 @@ html(lang='')
     meta(charset='utf-8')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1, minimal-ui')
+    meta(property='og:url', content='http://www.jackiestonemusic.com')
+    meta(property='og:title', content='Jackie Stone Music')
+    meta(property='og:type', content='website')
+    meta(property='og:description', content="Download The Wildfire by Jackie Stone.")
+    meta(property='fb:profile_id', content='https://www.facebook.com/jackiestonemusic')
+    meta(property='og:image', content='images/jackie-stone-1280x669.jpg')
+    meta(property='og:image:type', content='image/jpg')
+    meta(property='og:image:width', content='1280')
+    meta(property='og:image:height', content='669')
+    meta(property='fb:admins', content='100002872817691')
+    meta(itemprop="name", content="Jackie Stone Music")
+    meta(itemprop="description", content="Download The Wildfire by Jackie Stone")
+    meta(itemprop="image", content="images/jackie-stone-1280x669.jpg")
     title Jackie Stone Music
     // Place favicon.ico and apple-touch-icon.png in the root directory
     // build:css styles/vendor.css
     // bower:css
     //- link(rel='stylesheet', href='../bower_components/foundation/css/foundation.css')
-    //- link(rel='stylesheet', href='../bower_components/foundation-icon-fonts/foundation-icons.css')
+    link(rel='stylesheet', href='../bower_components/foundation-icon-fonts/foundation-icons.css')
     //- link(rel='stylesheet', href='../bower_components/jplayer/skin/pink.flag/jplayer.pink.flag.css')
     // endbower
     // endbuild
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css')
     // endbuild
-    script(src='//use.typekit.net/gqm4koo.js')
-    script.
-        try{Typekit.load();}catch(e){}
 
   body
     //if lt IE 10
@@ -27,28 +37,31 @@ html(lang='')
         strong outdated
         |  browser. Please 
         a(href='http://browsehappy.com/') upgrade your browser
-        |  to improve your experience.
+        |  to improve your experience.   
     include includes/header
     block content
     include includes/footer
       
-    // Google Analytics: change UA-XXXXX-X to be your site's ID.
-    //
-      <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script>
+    // Google Analytics
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-57735204-1', 'auto');
+      ga('send', 'pageview');
+
+    //Typekit 
+    script(src='//use.typekit.net/gqm4koo.js')
+    script.
+        try{Typekit.load();}catch(e){}
     // build:js scripts/vendor.js
     // bower:js
     script(src='../bower_components/modernizr/modernizr.js')
     script(src='../bower_components/jquery/dist/jquery.js')
     script(src='../bower_components/fastclick/lib/fastclick.js')
-    script(src='../bower_components/jquery.cookie/jquery.cookie.js')
-    script(src='../bower_components/jquery-placeholder/jquery.placeholder.js')
+    //- script(src='../bower_components/jquery.cookie/jquery.cookie.js')
+    //- script(src='../bower_components/jquery-placeholder/jquery.placeholder.js')
     script(src='../bower_components/foundation/js/foundation.js')
     script(src='../bower_components/jplayer/dist/jplayer/jquery.jplayer.js')
     script(src='../bower_components/jquery-waypoints/waypoints.js')
