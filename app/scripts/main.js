@@ -7,8 +7,8 @@ var songs = [
   },
   {
     "title": "2. Silence of Twilight",
-    "mp3": "/songs/02 Silence Of Twilight.mp3",
-    "wav": "/songs/02 Silence Of Twilight.wav"
+    "mp3": "/songs/02 Silence of Twilight.mp3",
+    "wav": "/songs/02 Silence of Twilight.wav"
   },
   {
     "title": "3. Rocketeer",
@@ -84,7 +84,7 @@ var songs = [
             padMin: false
           },
           swfPath: "js",
-          supplied: "mp3, wav",
+          supplied: "wav, mp3",
           cssSelectorAncestor: "#jp_container_audio_" + songNumber,
           smoothPlayBar: false,
           remainingDuration: true,
