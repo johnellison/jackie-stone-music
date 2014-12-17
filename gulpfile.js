@@ -6,10 +6,6 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-// gulp.task('clearCache', function (done) {
-//   return $.cache.clearAll(done);
-// });
-
 gulp.task('songs', function () {
   return gulp.src(['app/songs/*.mp3', 'app/songs/*.wav'])
     .pipe(gulp.dest('dist/songs'));
@@ -86,6 +82,14 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
+gulp.task('uncss', ['styles', 'html', 'extras'], function () {
+  return gulp.src(['dist/main.css', 'dist/vendor.css'])
+    .pipe($.uncss({
+      html: ['dist/index.html']
+    }))
+    .pipe(gulp.dest('dist/styles'))
+});
+
 gulp.task('serve', ['styles'], function () {
   browserSync({
     notify: false,
@@ -122,7 +126,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['songs', 'zip', 'jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['songs', 'zip', 'jshint', 'html', 'images', 'fonts', 'extras', 'uncss'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
