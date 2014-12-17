@@ -233,7 +233,7 @@ section {
 // end new begin old
 
 footer {
-	background-color: $light-grey;
+	background-color: #ddd;
 	padding: 2rem 0;
 	ul {
 		text-align: center;
@@ -243,9 +243,13 @@ footer {
 		font-size: 3rem;
 		display: inline-block;
 		margin-right: 1rem;
-		margin-top: -.3rem;
+		margin-top: -.7rem;
 		a {
 			color: $body-font-color;
+		}
+		img {
+			width: 60px;
+			height: 60px;
 		}
 	}
 	.made-by {

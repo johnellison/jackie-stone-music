@@ -5,7 +5,13 @@
 @import "settings";
 
 // You can import only specific elements by adjusting the import below
-@import "bower_components/foundation/scss/foundation";
+@import "bower_components/foundation/scss/foundation/components/buttons";
+@import "bower_components/foundation/scss/foundation/components/forms";
+@import "bower_components/foundation/scss/foundation/components/global";
+@import "bower_components/foundation/scss/foundation/components/grid";
+@import "bower_components/foundation/scss/foundation/components/panels";
+@import "bower_components/foundation/scss/foundation/components/top-bar";
+@import "bower_components/foundation/scss/foundation/components/type";
 
 //01-base
 @import "01-base/config";
@@ -20,16 +26,16 @@
 @import "03-modules/m-arrow";
 // @import "03-modules/m-lyrics";
 @import "03-modules/m-share-bar";
-@import "03-modules/m-share-buttons";
-@import "03-modules/m-share-song";
+// @import "03-modules/m-share-buttons";
+// @import "03-modules/m-share-song";
 @import "03-modules/m-song";
 // @import "03-modules/m-vertical-letter";
 
 //04-states
-@import "04-states/s-index";
+// @import "04-states/s-index";
 
 //05-themes
-@import "05-themes/themes";
+// @import "05-themes/themes";
 
 //debug
 // @import "01-base/debug";
