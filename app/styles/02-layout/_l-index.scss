@@ -7,6 +7,7 @@ section {
 .l-wildfire-front, .l-wildfire-back {
 	width: 100%;
 	height: 100%;
+	@include section-box-shadow;
 }
 
 .l-wildfire-front {
@@ -14,6 +15,7 @@ section {
 	background-image: image-url('../images/microphone-sepia-1920x1280.jpg');
 	background-size: cover;
 	margin: 0 auto;
+	z-index: 1;
 
 	@media #{$small-up} {
 		min-height: 500px;
@@ -89,14 +91,8 @@ section {
 	background-image: url('../images/the-wildfire-back-1280x753.jpg');
 	background-size: cover;
 	margin: 0 auto;
-	@include section-box-shadow;
-
 	h2, h3.subheader {
 		color: white;
-	}
-
-	h2 {
-		// padding-top: 1rem;
 	}
 
 	@media #{$small-up} {
@@ -136,10 +132,6 @@ section {
 
 	@media #{$medium-up} {
 		@include grid-column($columns: 5, $center: true);
-	}
-
-	h3.subheader {
-		margin: 0;
 	}
 }
 

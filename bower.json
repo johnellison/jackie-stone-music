@@ -6,10 +6,5 @@
     "foundation": "5.4.7",
     "jplayer": "~2.9.1",
     "jquery-waypoints": "~2.0.5"
-  },
-  "overrides": {
-    "foundation": {
-      "main": "bower_components/foundation/js/foundation/foundation.topbar.js"
-    }
   }
 }
