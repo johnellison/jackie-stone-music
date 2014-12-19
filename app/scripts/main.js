@@ -83,7 +83,7 @@ var songs = [
           timeFormat: {
             padMin: false
           },
-          swfPath: "js",
+          swfPath: "scripts",
           supplied: "wav, mp3",
           cssSelectorAncestor: "#jp_container_audio_" + songNumber,
           smoothPlayBar: false,

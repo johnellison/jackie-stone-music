@@ -11,6 +11,11 @@ gulp.task('songs', function () {
     .pipe(gulp.dest('dist/songs'));
 });
 
+gulp.task('swf', function() {
+  return gulp.src('app/scripts/jquery.jplayer.swf')
+    .pipe(gulp.dest('dist/scripts'));
+})
+
 gulp.task('zip', function() {
   return gulp.src('app/songs/the-wildfire.zip')
     .pipe(gulp.dest('dist'));
@@ -122,11 +127,13 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app/styles'));
 
   gulp.src('app/*.jade')
-    .pipe(wiredep())
+    .pipe(wiredep({
+      exclude: ['/bower_components/jquery.cookie/jquery.cookie.js', '/bower_components/jplayer/dist/skin/pink.flag/jplayer.pink.flag.css']
+    }))
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['songs', 'zip', 'jshint', 'html', 'images', 'fonts', 'extras', 'uncss'], function () {
+gulp.task('build', ['songs', 'swf', 'zip', 'jshint', 'html', 'images', 'fonts', 'extras', 'uncss'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
