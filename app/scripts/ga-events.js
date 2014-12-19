@@ -30,6 +30,15 @@
         });
       });
 
+      // play song
+      $('.m-song-wrapper').on($.jPlayer.event.play, function(e) {
+       // var title = $(e.target).children('audio').attr('title');
+        ga('send', {
+          'hitType' : 'event',
+          'eventCategory' : 'Play'
+        });
+      });
+
   }(jQuery));
 }());
 
